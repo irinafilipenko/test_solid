@@ -26,18 +26,15 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: InkWell(
         onTap: onTabGenerateNewColor,
-        child: Stack(
-          children: [
-            Container(
-              color: newColor,
+        child: AnimatedContainer(
+          duration: const Duration(seconds: 1),
+          color: newColor,
+          child: Center(
+            child: Text(
+              'Hello',
+              style: kHomePageTextStyle,
             ),
-            Center(
-              child: Text(
-                'Hello',
-                style: kHomePageTextStyle,
-              ),
-            ),
-          ],
+          ),
         ),
       ),
     );

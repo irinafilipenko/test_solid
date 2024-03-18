@@ -11,7 +11,7 @@ const Color kHomePageColor = Color(0xFFC984FF);
 TextStyle kHomePageTextStyle = const TextStyle(
   color: Color(0xFF021C23),
   fontWeight: FontWeight.w700,
-  fontSize: 16,
+  fontSize: 25,
 );
 
 //Functions
